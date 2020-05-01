@@ -40,3 +40,7 @@ p{
     margin: auto;
     padding: 5px 25px 25px 25px;
 }
+/* below changes the appearance of the navigation list*/
+nav a{
+    color: violet;
+}
