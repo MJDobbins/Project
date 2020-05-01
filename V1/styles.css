@@ -1,4 +1,23 @@
 @charset "utf-8";
+/* fonts n stuff */
+@font-face {
+    font-family: Champagne;
+    src: url(cac_champagne.woff) format('woff'),
+    url(cac_champagne.ttf) format('ttf');
+   }
+    
+   @font-face {
+    font-family: Grunge;
+    src: url(1942.woff) format('woff'),
+    url(1942.ttf) format('ttf');
+   }
+    
+   @font-face {
+    font-family: Dobkin;
+    src: url(DobkinPlain.woff) format('woff'),
+    url(DobkinPlain.ttf) format('ttf');
+   }
+/* fonts n stuff */
 /* Name: Marten Dobbins, Project V1, 4/29/2020, Provide primary structure for site */
 
 /* https://colorpalettes.net/color-palette-4064/ #140604 and #ffbb74 sourced from this page */
