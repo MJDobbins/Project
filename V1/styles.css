@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* fonts n stuff */
 @font-face {
     font-family: Champagne;
     src: url(cac_champagne.woff) format('woff'),
@@ -17,30 +16,64 @@
     src: url(DobkinPlain.woff) format('woff'),
     url(DobkinPlain.ttf) format('ttf');
    }
-/* fonts n stuff */
 /* Name: Marten Dobbins, Project V1, 4/29/2020, Provide primary structure for site */
-
-/* https://colorpalettes.net/color-palette-4064/ #140604 and #ffbb74 sourced from this page */
-
 html{
-    background-color: darkgoldenrod;
+    background-color: moccasin;
 }
-
-body{
-    background-color: black;
+/* M2LO5 Demonstrate contextual selectors */
+body > *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* M2LO3 Demonstrate style inheritance in CSS */
+    color:darkgoldenrod;
+}
+/* M2LO6  Demonstrate a CSS class selector */
+img.pagetop{
+    padding-left: 10px;
+    color: darkgoldenrod;
+    background-color: black;
 }
 
-h1{
-    text-align: center;
-    color: white;
+article img#rks-members:hover{
+    content: "RKS Band Members";
 }
-
-p{
+/* M2LO6  Demonstrate a CSS id */
+/* M2LO13 Demonstrate how CSS can change presentation of textual elements */
+article#band-members{
     margin: auto;
-    padding: 5px 25px 25px 25px;
+    padding: 5px 5px 5px 5px;
+    color: goldenrod;
+    font-style: italic;
 }
-/* below changes the appearance of the navigation list*/
+
+blockquote p#home-info-list::first-letter{
+    font-size: 150%;
+}
+/* M2LO5 Demonstrate contextual selectors */
+body img{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+/* M2LO11 Demonstrate a pseudo-classes */
+nav a:visited{
+    color:darkgoldenrod
+}
+
 nav a{
-    color: violet;
+    color: goldenrod;
+}
+
+footer{
+    color: goldenrod;
+    /* M2LO3 Demonstrate style precedence in CSS */
+    background-color: black;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+/* M2LO11 Demonstrate a pseudo-classes */
+footer a:visited{
+    color:darkgoldenrod;
 }
