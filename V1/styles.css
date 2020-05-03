@@ -21,6 +21,18 @@ body > *{
     color:rgb(48, 48, 48);
     background-color: hsl(47, 0%, 19%);
 }
+.pagetop a{
+    text-align: center;
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
+}
+.pagetop a:visited{
+    text-align: center;
+    color:rgb(197, 166, 52);
+    color:hsl(47, 58%, 49%);
+    text-decoration: none;
+}
 /* M2LO7 Demonstrate a CSS attribute selector other than class or id */
 header.pagetop img{
     padding-left: 10px;
