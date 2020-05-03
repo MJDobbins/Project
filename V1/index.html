@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <!-- M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page -->
-<!--- Name: Marten Dobbins, Project V1, 4/29/2020, Provide primary structure for site, -->
+ <!--
+   V1 Site
+   Author: Marten Dobbins
+   Date:   April 29th, 2020
+   
+   Filename: index.html
+   -->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -15,14 +21,14 @@
         </style>
     </head>
     <body>
-        <header><img class="pagetop" src="" alt="Rainbow Kitten Surprise"></header>
+        <header class="pagetop"><img src="" alt="Rainbow Kitten Surprise"></header>
         <!-- M1LO12 Create navigation using unordered lists -->
         <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation-->
         <nav>
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="discography.html">Discography</a></li>
-                <li></li>
                 <li></li>
                 <li></li>
             </ul>
@@ -32,7 +38,7 @@
             <img id="rks-members" src="rks1.jpg" alt="Rainbow Kitten Surprise Band Members" size="50%">
             <!-- M2LO4 Demonstrate inline styles -->
             <p style=" font-size: 0.8em;" id="band-members">
-                The band members: Jess Haney, Ethan Goodpaster, Sam Melo, Charlie Holt, and Darrick “Bozzy” Keller (Left-to-Right respectively).<br />
+                The band's members: Jess Haney, Ethan Goodpaster, Sam Melo, Charlie Holt, and Darrick “Bozzy” Keller (Left-to-Right respectively).<br />
             </p>
             <p id="home-info-list">
                 Here is some of what will be located on this site
@@ -42,6 +48,8 @@
                     <li>Notable information on the band itself.</li>
                     <li>List of previous festivals/concerts performed at.</li>
                 </ol>
+                <!-- M1LO13 Demonstrate using 3 types of hyperlinks: external -->
+                <a id="about-page-2" href="/Project/V1/about.html">About Page</a>
             </p>
         </article>
         <footer style="text-align: center;">

@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<!--- Name: Marten Dobbins, Project V1, 4/29/2020, Provide primary structure for site, -->
+<!--- V1 Site
+   Author: Marten Dobbins
+   Date:   April 29th, 2020
+   
+   Filename: about.html -->
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>V1 Changelog</title>
+        <title id="pagetop">V1 Changelog</title>
         <link href="styles.css" rel="stylesheet" />
         <style>
             ul{
@@ -12,24 +16,26 @@
         </style>
     </head>
     <body>
+        <header  class="pagetop"><img src="" alt="Rainbow Kitten Surprise"></header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="discography.html">Discography</a></li>
-                <li></li>
                 <li></li>
                 <li></li>
             </ul>
         </nav>
-        <header>
-            <h1>About</h1>
-        </header>
-        <!-- M2LO6 Demonstrate a CSS id selector-->
+        <img id="rks-members" src="rks1.jpg" alt="Rainbow Kitten Surprise Band Members" size="50%">
+        <!-- M1LO10 Demonstrate the use of special characters from extended character sets -->
         <p id="info-page">
-            Name: Marten Dobbins<br />
-            Course: CIS 155<br />
-            Date: April 29th, 2020<br />
-            V1 Additions: about.html, styles.css, index.html<br />
+            &#9758Name: Marten Dobbins<br />
+            &#9758Course: CIS 155<br />
+            &#9758Date: April 29th, 2020<br />
+            &#9758V1 Additions: about.html, styles.css, index.html<br />
         </p>
+        <footer style="text-align: center;">
+            <a href="about.html#info-page">About page link</a>&nbsp;<a href="#pagetop">Go back to top of page</a>
+        </footer>
     </body>
 </html>

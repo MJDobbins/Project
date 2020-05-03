@@ -1,22 +1,9 @@
 @charset "utf-8";
-@font-face {
-    font-family: Champagne;
-    src: url(cac_champagne.woff) format('woff'),
-    url(cac_champagne.ttf) format('ttf');
-   }
-    
-   @font-face {
-    font-family: Grunge;
-    src: url(1942.woff) format('woff'),
-    url(1942.ttf) format('ttf');
-   }
-    
-   @font-face {
-    font-family: Dobkin;
-    src: url(DobkinPlain.woff) format('woff'),
-    url(DobkinPlain.ttf) format('ttf');
-   }
-/* Name: Marten Dobbins, Project V1, 4/29/2020, Provide primary structure for site */
+/* V1 Site
+   Author: Marten Dobbins
+   Date:   April 29th, 2020
+   
+   Filename: styles.css */
 html{
     background-color: moccasin;
 }
@@ -24,29 +11,34 @@ html{
 body > *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /* M2LO3 Demonstrate style inheritance in CSS */
-    color:darkgoldenrod;
+    /* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS */
+    /* M2LO15 Apply colors using CSS */
+    color:rgb(197, 166, 52);
+    color:hsl(47, 58%, 49%);
 }
 /* M2LO6  Demonstrate a CSS class selector */
-img.pagetop{
-    padding-left: 10px;
-    color: darkgoldenrod;
-    background-color: black;
+.pagetop{
+    color:rgb(48, 48, 48);
+    background-color: hsl(47, 0%, 19%);
 }
-
-article img#rks-members:hover{
-    content: "RKS Band Members";
+/* M2LO7 Demonstrate a CSS attribute selector other than class or id */
+header.pagetop img{
+    padding-left: 10px;
+    color:rgb(197, 166, 52);
+    color: hsl(47, 58%, 49%);
 }
 /* M2LO6  Demonstrate a CSS id */
-/* M2LO13 Demonstrate how CSS can change presentation of textual elements */
-article#band-members{
+#band-members{
     margin: auto;
     padding: 5px 5px 5px 5px;
-    color: goldenrod;
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    /* M2LO13 Demonstrate how CSS can change presentation of textual elements */
     font-style: italic;
 }
-
-blockquote p#home-info-list::first-letter{
-    font-size: 150%;
+/* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector */
+p#home-info-list::first-letter{
+    font-size: 120%;
 }
 /* M2LO5 Demonstrate contextual selectors */
 body img{
@@ -57,23 +49,44 @@ body img{
 }
 /* M2LO11 Demonstrate a pseudo-classes */
 nav a:visited{
-    color:darkgoldenrod
+    color: rgb(181, 156, 64);
+    color:hsl(47, 48%, 48%);
+    text-decoration: none;
 }
 
 nav a{
-    color: goldenrod;
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
 }
 
 footer{
-    color: goldenrod;
+    /* M2LO12 Demonstrate how CSS can change presentation of page elements */
     /* M2LO3 Demonstrate style precedence in CSS */
-    background-color: black;
+    background-color: hsl(47, 0%, 19%);
     padding-left: 2px;
     padding-right: 2px;
     padding-bottom: 2px;
     padding-top: 2px;
 }
+footer a{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
+}
 /* M2LO11 Demonstrate a pseudo-classes */
 footer a:visited{
-    color:darkgoldenrod;
+    color:rgb(197, 166, 52);
+    color:hsl(47, 58%, 49%);
+    text-decoration: none;
+}
+a#about-page-2{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
+}
+a#about-page-2:visited{
+    color:rgb(197, 166, 52);
+    color:hsl(47, 58%, 49%);
+    text-decoration: none;
 }
