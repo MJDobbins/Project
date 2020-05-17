@@ -98,10 +98,6 @@ p#album-names{
     display: block;
     clear: left;
 }
-#song-lists{
-    display: block;
-    clear: left;
-}
 #song-lists a{
     color:rgb(214, 186, 81);
     color: hsl(47, 62%, 58%);
