@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* V3 Site
+   Author: Marten Dobbins
+   Date:   May 28, 2020
+   
+   Filename: styles.css */
+/* M4LO2 Demonstrate the use of background images (CSS): Image is RKS' logo on the moccasin color background*/
+html{
+    background-color: moccasin;
+    background: url(rksbackground.png) repeat;
+}
+/* M5LO3 Use media queries to format a page differently for phones vs. PCs. */
+@media (max-width: 480px){
+    .albums::after{
+        clear: both;
+    }
+    .album-container{
+        float: left;
+        padding: 10px;
+        width: 100%;
+    }
+}
+@media (min-width: 481px){
+    .albums::after{
+        clear: both;
+    }
+    .album-container{
+        float: left;
+        padding: 10px;
+        width: 30%;
+    }
+}
+/* Body Styles */
+body > *{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(197, 166, 52);
+    color:hsl(47, 58%, 49%);
+}
+/* Header CSS below*/
+/* M4LO5 Demonstrate the use of box shadowing: It allows for more depth to my header rather than it being flat entirely*/
+.pagetop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color:rgb(48, 48, 48);
+    background-color: hsl(47, 0%, 19%);
+    box-shadow: grey 0px 4px 5px;
+}
+.pagetop a{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
+    float: left;
+}
+.pagetop a:visited{
+    color:rgb(197, 166, 52);
+    color:hsl(47, 58%, 49%);
+    text-decoration: none;
+}
+/* Header CSS above */
+article{
+    clear: both;
+}
+figure{
+    position: relative;
+    width: 65%;
+    clear:left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+figure img#rks-members{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    clear: both;
+    box-shadow: grey 0px 4px 5px;
+    border: 2px solid darkgrey;
+    border-radius: 10%;
+}
+figcaption#band-members{
+    clear: left;
+    padding: 5px 5px 5px 5px;
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    font-style: italic;
+    font-size: 0.8em
+}
+p, ol, figcaption, nav{
+    text-shadow: rgb(166, 166, 166) 0px 5px 6px;
+}
+p#home-info-list::first-letter{
+    font-size: 120%;
+}
+
+img#RKS-Albums{
+    display: block;
+    clear: left;
+    float: left;
+    box-shadow: grey 0px 4px 5px;
+}
+p#album-names{
+    display: block;
+    clear: left;
+}
+#song-lists a{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
+}
+#song-lists a:visited{
+    color:rgb(197, 166, 52);
+    color:hsl(47, 58%, 49%);
+    text-decoration: none;
+}
+#opacity{
+    width: 23%;
+    height: 23%;
+    right: 75%;
+    position: absolute;
+    opacity: 9%;
+    transform: scale(1.2, 0.9);
+}
+#info-page{
+    overflow: auto;
+    position: relative;
+    bottom: 5px;
+    height: 300px;
+    width:100%;
+    text-align: center;
+}
+/* Navigation Styles */
+
+
+nav{
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+nav a:visited{
+    color: rgb(181, 156, 64);
+    color:hsl(47, 48%, 48%);
+}
+nav a{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    padding-bottom: 9px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+nav ul li{
+    float: left;
+  }
+/* Footer Styles */
+footer{
+    color:rgb(48, 48, 48);
+    background-color: hsl(47, 0%, 19%);
+    /* M3LO9 Demonstrate fixed positioning*/
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    clear: both;
+    text-align: center;
+}
+footer a{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
+}
+footer a:visited{
+    color:rgb(197, 166, 52);
+    color:hsl(47, 58%, 49%);
+    text-decoration: none;
+}
+a#about-page-2{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
+}
+a#about-page-2:visited{
+    color:rgb(197, 166, 52);
+    color:hsl(47, 58%, 49%);
+    text-decoration: none;
+}
