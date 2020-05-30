@@ -11,9 +11,6 @@ html{
 }
 /* M5LO3 Use media queries to format a page differently for phones vs. PCs. */
 @media (max-width: 480px){
-    .albums::after{
-        clear: left;
-    }
     .album-container{
         float: left;
         padding: 10px;
