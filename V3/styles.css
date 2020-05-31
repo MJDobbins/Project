@@ -211,7 +211,7 @@ div li ul#social-media-links li a:visited{
 nav{
     display: table;
     text-align: center;
-    width: 100%;
+    width: auto;
 }
 nav a:visited{
     color: rgb(181, 156, 64);
