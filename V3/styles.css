@@ -22,6 +22,22 @@ any changes with 480px */
         display: block;
         clear: left;
     }
+    figure{
+        clear:left;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    figure img#rks-members{
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        clear: both;
+        box-shadow: grey 0px 4px 5px;
+        border: 2px solid darkgrey;
+        border-radius: 10%;
+    }
 }
 @media (min-width: 721px){
     .albums::after{
@@ -41,6 +57,24 @@ any changes with 480px */
     p#album-names{
         display: block;
         clear: left;
+    }
+    figure{
+        position: relative;
+        width: 65%;
+        clear:left;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    figure img#rks-members{
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        clear: both;
+        box-shadow: grey 0px 4px 5px;
+        border: 2px solid darkgrey;
+        border-radius: 10%;
     }
 }
 /* Body Styles */
@@ -73,24 +107,6 @@ body > *{
 /* Header CSS above */
 article{
     clear: both;
-}
-figure{
-    position: relative;
-    width: 65%;
-    clear:left;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-figure img#rks-members{
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 8px;
-    padding-top: 8px;
-    clear: both;
-    box-shadow: grey 0px 4px 5px;
-    border: 2px solid darkgrey;
-    border-radius: 10%;
 }
 figcaption#band-members{
     clear: left;
