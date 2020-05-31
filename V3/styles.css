@@ -51,7 +51,6 @@ body > *{
     color:hsl(47, 58%, 49%);
 }
 /* Header CSS below*/
-/* M4LO5 Demonstrate the use of box shadowing: It allows for more depth to my header rather than it being flat entirely*/
 .pagetop{
     position: fixed;
     top: 0;
@@ -122,14 +121,6 @@ p#home-info-list::first-letter{
     color:hsl(47, 58%, 49%);
     text-decoration: none;
 }
-#opacity{
-    width: 23%;
-    height: 23%;
-    right: 75%;
-    position: absolute;
-    opacity: 9%;
-    transform: scale(1.2, 0.9);
-}
 #info-page{
     overflow: auto;
     position: relative;
@@ -138,7 +129,47 @@ p#home-info-list::first-letter{
     width:100%;
     text-align: center;
 }
+/* Table Styles */
+/* M6LO7 Demonstrate how to format a table with CSS:
+The border makes the table stand out more against the page
+and the background color for the head makes it similar to the header and footer */
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+table, th, td{
+    border: 1px solid black;
+}
+thead{
+    background-color: rgb(48, 48, 48);
+}
+/* Flex Styling */
+/* M5LO5 Demonstrate the use of flexboxes on a web page: It changes up the page and shifts the table up and the image to the side
+while leaving the paragraph alone */
+/* M5LO7 Demonstrate use of properties of flexbox containers: I used the flex-direction property to align the figure and table
+onto the same row */
+#flex-test{
+    display: flex;
+    flex-direction: row;
+}
+/* M5LO6 Demonstrate use of properties of flexbox items: allows the figure and the table to both fit side by side*/
+#flex-test figure{
+    flex: 0 1 auto;
+}
+#flex-test table{
+    flex: 0 1 auto;
+}
+p#info-band{
+    text-align: justify;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Submenu Styles */
+/*M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas)
+So when hovered it will show the links to the band's social media and it is located on the homepage beneath the ordered list*/
 a#social-submenu:hover+ul#social-media-links, ul#social-media-links:hover{
     display: inline-block;
     vertical-align: auto;
@@ -147,7 +178,6 @@ a#social-submenu+ul#social-media-links{
     float: left;
     clear: both;
     font-size: 17px;
-    text-align: left;
 }
 div#band-social-media{
     display: block;
@@ -202,7 +232,6 @@ nav ul li{
 footer{
     color:rgb(48, 48, 48);
     background-color: hsl(47, 0%, 19%);
-    /* M3LO9 Demonstrate fixed positioning*/
     position: fixed;
     left: 0;
     bottom: 0;
