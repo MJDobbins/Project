@@ -12,11 +12,10 @@ html{
 /* M5LO3 Use media queries to format a page differently for phones vs. PCs. */
 /* I had to change the max-width to 720px due to my phone the lowest resolution it could go to was 1480x720 so I couldn't see 
 any changes with 480px */
+/* Despite these changes though it seems to still not be working */
 @media (max-width: 721px){
     .album-container{
         padding: 10px;
-        width: 100%;
-        height: 100%;
     }
     p#album-names{
         display: block;
