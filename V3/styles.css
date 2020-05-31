@@ -193,29 +193,29 @@ a#social-submenu+ul#social-media-links{
     clear: both;
     font-size: 17px;
 }
-div#band-social-media{
+li#band-social-media{
     display: block;
 }
-div#band-social-media li{
+li#band-social-media{
     list-style: none;
 }
-div#band-social-media li ul{
+li#band-social-media ul{
     display: none;
 }
-div#band-social-media li ul li{
+li#band-social-media ul li{
     list-style: none;
 }
-div li a#social-submenu, a#social-submenu:visited{
+li a#social-submenu, a#social-submenu:visited{
     color:rgb(214, 186, 81);
     color: hsl(47, 62%, 58%);
     text-decoration: none;
 }
-div li ul#social-media-links li a{
+li ul#social-media-links li a{
     color:rgb(214, 186, 81);
     color: hsl(47, 62%, 58%);
     text-decoration: none;
 }
-div li ul#social-media-links li a:visited{
+li ul#social-media-links li a:visited{
     color: rgb(181, 156, 64);
     color:hsl(47, 48%, 48%);
     text-decoration: none;
