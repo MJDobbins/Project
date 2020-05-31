@@ -10,14 +10,16 @@ html{
     background: url(rksbackground.png) repeat;
 }
 /* M5LO3 Use media queries to format a page differently for phones vs. PCs. */
-@media (max-width: 480px){
+/* I had to change the max-width to 720px due to my phone the lowest resolution it could go to was 1480x720 so I couldn't see 
+any changes with 480px */
+@media (max-width: 720px){
     .album-container{
         padding: 10px;
         width: 100%;
         height: 100%;
     }
 }
-@media (min-width: 481px){
+@media (min-width: 721px){
     .albums::after{
         clear: both;
     }
