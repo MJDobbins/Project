@@ -171,7 +171,6 @@ p#info-band{
 So when hovered it will show the links to the band's social media and it is located on the homepage beneath the ordered list*/
 a#social-submenu:hover+ul#social-media-links, ul#social-media-links:hover{
     display: inline-block;
-    vertical-align: auto;
 }
 a#social-submenu+ul#social-media-links{
     float: left;
