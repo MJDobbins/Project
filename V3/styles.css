@@ -16,6 +16,8 @@ any changes with 480px */
 @media (max-width: 721px){
     .album-container{
         padding: 10px;
+        width: 20%;
+        height: 50%;
     }
     p#album-names{
         display: block;
@@ -136,9 +138,46 @@ p#home-info-list::first-letter{
     width:100%;
     text-align: center;
 }
+/* Submenu Styles */
+a#social-submenu:hover+ul#social-media-links, ul#social-media-links:hover{
+    display: inline-block;
+    vertical-align: auto;
+}
+a#social-submenu+ul#social-media-links{
+    float: left;
+    clear: both;
+    font-size: 17px;
+    text-align: left;
+}
+div#band-social-media{
+    display: block;
+}
+div#band-social-media li{
+    list-style: none;
+}
+div#band-social-media li ul{
+    display: none;
+}
+div#band-social-media li ul li{
+    list-style: none;
+}
+div li a#social-submenu, a#social-submenu:visited{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
+}
+div li ul#social-media-links li a{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
+}
+div li ul#social-media-links li a:visited{
+    color: rgb(181, 156, 64);
+    color:hsl(47, 48%, 48%);
+    text-decoration: none;
+}
+
 /* Navigation Styles */
-
-
 nav{
     display: table;
     text-align: center;
@@ -158,6 +197,7 @@ nav a{
 nav ul li{
     float: left;
   }
+
 /* Footer Styles */
 footer{
     color:rgb(48, 48, 48);
