@@ -18,6 +18,10 @@ any changes with 480px */
         width: 100%;
         height: 100%;
     }
+    p#album-names{
+        display: block;
+        clear: left;
+    }
 }
 @media (min-width: 721px){
     .albums::after{
@@ -27,6 +31,16 @@ any changes with 480px */
         float: left;
         padding: 10px;
         width: 30%;
+    }
+    img#RKS-Albums{
+        display: block;
+        clear: left;
+        float: left;
+        box-shadow: grey 0px 4px 5px;
+    }
+    p#album-names{
+        display: block;
+        clear: left;
     }
 }
 /* Body Styles */
@@ -95,16 +109,8 @@ p#home-info-list::first-letter{
     font-size: 120%;
 }
 
-img#RKS-Albums{
-    display: block;
-    clear: left;
-    float: left;
-    box-shadow: grey 0px 4px 5px;
-}
-p#album-names{
-    display: block;
-    clear: left;
-}
+
+
 #song-lists a{
     color:rgb(214, 186, 81);
     color: hsl(47, 62%, 58%);
