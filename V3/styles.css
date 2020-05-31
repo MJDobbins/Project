@@ -12,7 +12,7 @@ html{
 /* M5LO3 Use media queries to format a page differently for phones vs. PCs. */
 /* I had to change the max-width to 720px due to my phone the lowest resolution it could go to was 1480x720 so I couldn't see 
 any changes with 480px */
-@media (max-width: 720px){
+@media (max-width: 721px){
     .album-container{
         padding: 10px;
         width: 100%;
@@ -23,7 +23,7 @@ any changes with 480px */
         clear: left;
     }
 }
-@media (min-width: 721px){
+@media (min-width: 722px){
     .albums::after{
         clear: both;
     }
@@ -158,6 +158,7 @@ nav a{
 }
 nav ul li{
     float: left;
+    width: 10%;
   }
 /* Footer Styles */
 footer{
