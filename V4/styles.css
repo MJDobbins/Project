@@ -1,0 +1,295 @@
+@charset "utf-8";
+/* V4 Site
+   Author: Marten Dobbins
+   Date:   June 13th, 2020
+   
+   Filename: styles.css */
+html{
+    background-color: moccasin;
+    background: url(rksbackground.png) repeat;
+}
+@media (max-width: 720px){
+    .album-container{
+        padding: 10px;
+        width: 20%;
+        height: 50%;
+    }
+    p#album-names{
+        display: block;
+        clear: left;
+    }
+    figure{
+        clear:left;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    figure img#rks-members{
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        clear: both;
+        box-shadow: grey 0px 4px 5px;
+        border: 2px solid darkgrey;
+        border-radius: 10%;
+        width: 20%;
+        height: 50%;
+    }
+}
+/* M8LO10 Demonstrate a CSS animation */
+@keyframes backgroundcolor{
+    from {background-color: rgb(255, 228, 194);}
+    to{ background-color: rgb(255, 228, 181);}
+}
+@media (min-width: 721px){
+    .albums::after{
+        clear: both;
+    }
+    /* M8LO10 Demonstrate a CSS animation: Located on the discography page. Very slight change in background color that 
+    matches the two different slight changes in color already previous in the normal background.
+    I'll probably remove it in the future as it doesn't mesh entirely well with the site. That goes for my low quality gif too.*/
+    .album-container{
+        float: left;
+        padding: 10px;
+        width: 30%;
+        background-color: rgb(255, 228, 194);
+        animation-name: backgroundcolor;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    img#RKS-Albums{
+        display: block;
+        clear: left;
+        float: left;
+        box-shadow: grey 0px 4px 5px;
+    }
+    p#album-names{
+        display: block;
+        clear: left;
+    }
+    figure{
+        position: relative;
+        width: 65%;
+        clear:left;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    figure img#rks-members{
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        clear: both;
+        box-shadow: grey 0px 4px 5px;
+        border: 2px solid darkgrey;
+        border-radius: 10%;
+    }
+    .home-page-container::after{
+        clear: both;
+    }
+    .home-page-block{
+        float: left;
+        padding: 10px;
+        width: 30%;
+    }
+}
+/* Body Styles */
+body > *{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(197, 166, 52);
+    color:hsl(47, 58%, 49%);
+}
+/* Header CSS below*/
+.pagetop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color:rgb(48, 48, 48);
+    background-color: hsl(47, 0%, 19%);
+    box-shadow: grey 0px 4px 5px;
+}
+.pagetop a{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
+    float: left;
+}
+.pagetop a:visited{
+    color:rgb(197, 166, 52);
+    color:hsl(47, 58%, 49%);
+    text-decoration: none;
+}
+/* Header CSS above */
+article{
+    clear: both;
+}
+figcaption#band-members{
+    clear: left;
+    padding: 5px 5px 5px 5px;
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    font-style: italic;
+    font-size: 0.8em
+}
+p, ol, figcaption, nav{
+    text-shadow: rgb(166, 166, 166) 0px 5px 6px;
+    text-shadow: hsl(0, 0%, 65%) 0px 5px 6px;
+}
+p#home-info-list::first-letter{
+    font-size: 120%;
+}
+#iframe-rks{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    clear: both;
+    box-shadow: grey 0px 4px 5px;
+    border: 2px solid darkgrey;
+    border-radius: 10%;
+}
+
+
+#song-lists a{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
+}
+#song-lists a:visited{
+    color:rgb(197, 166, 52);
+    color:hsl(47, 58%, 49%);
+    text-decoration: none;
+}
+#info-page{
+    overflow: auto;
+    position: relative;
+    bottom: 5px;
+    height: 300px;
+    width:100%;
+    text-align: center;
+}
+/* Table Styles */
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+table, th, td{
+    border: 1px solid black;
+}
+thead{
+    background-color: rgb(48, 48, 48);
+}
+/* Flex Styling */
+#flex-test{
+    display: flex;
+    flex-direction: column;
+}
+#flex-test figure{
+    flex: 0 1 auto;
+}
+#flex-test table{
+    flex: 0 1 auto;
+}
+p#info-band{
+    text-align: justify;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Submenu Styles */
+a#social-submenu:hover+ul#social-media-links, ul#social-media-links:hover{
+    display: inline-block;
+}
+a#social-submenu+ul#social-media-links{
+    float: left;
+    clear: both;
+    font-size: 17px;
+}
+li#band-social-media{
+    display: block;
+}
+li#band-social-media{
+    list-style: none;
+}
+li#band-social-media ul{
+    display: none;
+}
+li#band-social-media ul li{
+    list-style: none;
+}
+li a#social-submenu, a#social-submenu:visited{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
+}
+li ul#social-media-links li a{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
+}
+li ul#social-media-links li a:visited{
+    color: rgb(181, 156, 64);
+    color:hsl(47, 48%, 48%);
+    text-decoration: none;
+}
+
+/* Navigation Styles */
+nav{
+    display: table;
+    text-align: center;
+    width: auto;
+}
+nav a:visited{
+    color: rgb(181, 156, 64);
+    color:hsl(47, 48%, 48%);
+}
+nav a{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    padding-bottom: 9px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+nav ul li{
+    float: left;
+  }
+
+/* Footer Styles */
+footer{
+    color:rgb(48, 48, 48);
+    background-color: hsl(47, 0%, 19%);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    clear: both;
+    text-align: center;
+}
+footer a{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
+}
+footer a:visited{
+    color:rgb(197, 166, 52);
+    color:hsl(47, 58%, 49%);
+    text-decoration: none;
+}
+a#about-page-2{
+    color:rgb(214, 186, 81);
+    color: hsl(47, 62%, 58%);
+    text-decoration: none;
+}
+a#about-page-2:visited{
+    color:rgb(197, 166, 52);
+    color:hsl(47, 58%, 49%);
+    text-decoration: none;
+}

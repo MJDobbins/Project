@@ -1,0 +1,17 @@
+/* M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules) */
+address, article, aside, body, div, figcaption, figure, footer, h1, header, img, main, nav, ol, ul{
+    background: transparent;
+    display: block;
+}
+nav ul{
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+}
+nav a:visited{
+    text-decoration: none; 
+}
+body{
+    line-height: 1.1;
+}
